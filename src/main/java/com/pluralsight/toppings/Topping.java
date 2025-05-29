@@ -1,6 +1,8 @@
 package com.pluralsight.toppings;
 
-public abstract class Topping {
+import com.pluralsight.core.Priceable;
+
+public abstract class Topping implements Priceable {
 
     /*
      * Abstract class representing a topping.
@@ -13,5 +15,20 @@ public abstract class Topping {
      * Methods:
      * - getPrice(): double
      */
+    private String name;
+    private double price;
 
+    public Topping(String name, double price) {
+        this.name = name;
+        this.price = price;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public double getPrice() {
+        return price;
+    }
 }

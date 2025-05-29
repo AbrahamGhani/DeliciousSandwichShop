@@ -1,19 +1,15 @@
 package com.pluralsight;
-
+import com.pluralsight.ui.UIControl;
 public class Main {
     public static void main(String[] args) {
 
         /*
          * Entry point of the CLI application.
-         *
-         * Methods:
-         * - main(String[] args): void
-         *
-         * Usage:
-         * - instantiates UIControl
-         * - starts the CLI loop via UIControl.startApp()
+         * - Instantiates UIControl
+         * - Starts the CLI loop
          */
-
+        UIControl ui = new UIControl();
+        ui.startApp();
 
 
 

@@ -1,6 +1,6 @@
 package com.pluralsight.toppings;
 
-public class PremiumTopping {
+public class PremiumTopping extends Topping{
     /*
      * A premium topping with additional cost.
      * Subclass of Topping.
@@ -10,4 +10,7 @@ public class PremiumTopping {
      * - price: double (inherited)
      */
 
+    public PremiumTopping(String name, double price) {
+        super(name, price);
+    }
 }

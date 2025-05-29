@@ -1,0 +1,14 @@
+=== ORDER RECEIPT ===
+Timestamp: 2025-05-29T10:55:14.904073100
+Order ID: test-001
+
+--- Sandwich ---
+Bread: White
+Size: 4"
+Toasted: No
+Premium Toppings:
+  - Ham: $1.00
+Regular Toppings:
+Sandwich Total: $5.00
+
+=== TOTAL: $5.00 ===

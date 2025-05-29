@@ -2,18 +2,17 @@ package com.pluralsight.authentication;
 
 public class LoginManager {
 
-/*
 
- * Authenticates a Manager based on username and password.
- *
- * Methods:
- * - authenticate(user: String, pass: String): Manager
- * ppublic static Manager authenticate(String user, String pass) → returns Manager or null
- * Future considerations:
- * - support for token-based login
- * - audit logging for login attempts
-
+    /*
+     * Authenticates a Manager based on username and password.
      */
+    public static Manager authenticate(String user, String pass) {
+        // In a real app, this would check a database or file.
+        if (user.equals("admin") && pass.equals("password123")) {
+            return new Manager(user, pass);  // assuming Manager has this constructor
+        }
 
+        return null; // authentication failed
+    }
 
 }
